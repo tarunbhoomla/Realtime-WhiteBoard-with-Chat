@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>collab-board</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body>
+  
+
+    
+
+  <canvas class="whiteboard" ></canvas>
+
+  <div class="head">
+    <h2><strong>Realtime WhiteBoard With Chat </strong> </h2>
+  </div>
+
+  <div class="colors">
+    <div class="color black"></div>
+    <div class="color red"></div>
+    <div class="color green"></div>
+    <div class="color blue"></div>
+    <div class="color yellow"></div>
+    <div class="color white"><i class="fa fa-eraser fa-2x eraser" aria-hidden="true"></i></div>
+  </div>
+
+  <div class="sizes">
+    <div class="size 2 two">X</div>
+    <div class="size 4 four">2X</div>
+    <div class="size 8 six">4X</div>
+    <div class="size 10 ten">5X</div>
+    <div id="clear-all" class="size clear-all">Clear All</div>
+  </div>
+   
+
+ <div class="communication-conatiner">
+
+   <div class="textConatiner">
+    <ul class="pages">
+      <li class="chat page">
+        <div class="chatArea">
+          <ul class="messages"></ul>
+        </div>
+        <input class="inputMessage" placeholder="Type Here..."/>
+      </li>
+      <li class="login page">
+        <div class="form">
+          <h3 class="title">Enter your Name?</h3>
+          <input class="usernameInput" type="text" maxlength="14" />
+          <h5 class="credit">Github -> <a class="githubLink" href="https://github.com/elementrix05">Link</a></h5>
+        </div>
+      </li>
+    </ul>
+   </div>
+ </div> 
+ 
+
+  
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="main.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+        var board_url = window.location.href;
+        $('.linkToBoard').attr("href",board_url);
+    });
+  </script>
+
+  <script src="chat.js"></script>
+
+</body>
+</html>
