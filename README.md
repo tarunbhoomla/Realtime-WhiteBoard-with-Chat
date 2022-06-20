@@ -5,7 +5,7 @@ The front end is built on top of html5 canvas. Different kinds of colors are ava
 
 
 ## Demo :sunglasses:
-[https://realtimeboard2.herokuapp.com/](https://realtimeboard2.herokuapp.com/)
+https://realtimewhiteboard115.herokuapp.com/
 
 
 ## usage
